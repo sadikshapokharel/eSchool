@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>{% block title %} {% endblock %} | eSchool</title>
+  </head>
+  <style>
+      .banner{
+          background-image: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1566917764/Add_a_heading.png) !important;
+          background-size: cover;
+          padding: 180px 0 200px 0;
+      }
+      .banner form{
+        position: relative;
+        width: 540px;
+        margin: 22px auto 0
+      }
+      .banner form input[type="text"] {
+        padding: 5px 20px;
+        padding-right: 100px;
+        border-color: transparent;
+        border-radius: 4px
+}
+  </style>
+  <body>
+    
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">eSchool</a>
+    <div>
+        <a href=""><button class="btn btn-success">Signup</button></a>
+        <a href=""><button class="btn btn-primary">Login</button></a>
+    </div>
+  </nav>
+
+  <section class="banner">
+        <form class="search" action="" method="">
+            <input type="text" name="search" placeholder="Search Courses">
+            <button class="btn btn-success">Search</button>
+        </form>
+  </section>
+  {% block body %}
+  {% endblock %}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
